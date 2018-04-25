@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  - each index in indexes
+    span #{index.package_name}
+    &nbsp;
+    span #{index.version}
+    p
